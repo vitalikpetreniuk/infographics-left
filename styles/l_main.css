@@ -658,11 +658,11 @@ p.l_subtitle
 
 .l_grid_btn {
 	background: #f4f4f4;
+	border: 1px solid #e5e5e5;
 	width: 100%;
 	-webkit-transition: background-color 0.3s ease;
 	-o-transition: background-color 0.3s ease;
 	transition: background-color 0.3s ease;
-	border: none;
 	position: relative;
 }
 .l_grid_btn:focus {
