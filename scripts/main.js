@@ -2,8 +2,6 @@
 $(function() {
 	const popUp = $('.lr-popup');
 	const popUpContent = $('.lrp-content');
-
-
 	const body = $('body');
 
 	const handlerOpenPopUp = (e) => {
