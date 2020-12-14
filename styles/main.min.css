@@ -3206,14 +3206,6 @@ html {
     color: #666
 }
 
-::-moz-selection {
-    color: #fff
-}
-
-::selection {
-    color: #fff
-}
-
 body {
     font-size: 16px;
     min-width: 320px;

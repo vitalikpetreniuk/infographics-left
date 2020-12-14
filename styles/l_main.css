@@ -190,6 +190,14 @@ p.l_subtitle
 	font-weight: 700;
 	line-height: 26px;
 	text-align: center;
+
+	-webkit-transition: all .15s linear;
+	transition: all .15s linear;
+}
+.l_grid_item:hover
+{
+	background-color: #e5e5e5;
+	border-color: #e5e5e5;
 }
 .l_grid_item:active,
 .l_grid_item:focus {
@@ -237,6 +245,7 @@ p.l_subtitle
 	border-radius: 40px;
 	width: 150px;
 	height: 60px;
+	font-size: 16px;
 }
 .l_finger_btn:focus,
 .l_finger_btn:active {
@@ -259,18 +268,22 @@ p.l_subtitle
 	background: url("../images/shadow.png") center center no-repeat;
 	background-size: contain;
 	color: #3c3d43;
-	font-size: 26px;
-	line-height: 30px;
+	font-size: 16px;
+	line-height: 1;
 	font-family: MuseoSansCyrl-900, sans-serif;
-	-webkit-transition: opacity .15s ease;
-	-o-transition: opacity .15s ease;
-	transition: opacity .15s ease;
+	-webkit-transition: opacity .1s linear;
+	-o-transition: opacity .1s linear;
+	transition: opacity .1s linear;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+.l_finger_btn:first-child span
+{
+	top: 100%;
 }
 .l_finger_btn span.red  {
 	color: #d03b3e;
@@ -279,8 +292,8 @@ p.l_subtitle
 	z-index: 10;
 }
 .l_finger_btn:hover  span {
-	width: 230px;
-	height: 170px;
+	width: 150px;
+	height: 90px;
 	opacity: 1;
 }
 
@@ -370,9 +383,17 @@ p.l_subtitle
 	width: 800px;
 	height: 470px;
 	background-color: #3c3d43;
-	padding: 50px 63px 63px 63px;
+	padding: 50px 32px 63px 63px;
 	border-radius: 5px;
 	position: relative;
+}
+.l_page .lr-popup .lrp-content
+{
+	max-width: none;
+}
+.l_page .lr-popup .lrp-content .popup_text
+{
+	padding-right: 50px;
 }
 
 .evolution_title,
@@ -1222,6 +1243,16 @@ p.l_subtitle
 	background-size: auto 100%;
 }
 
+.lr-popup .lrp-inner
+{
+	padding-right: 32px;
+}
+.l_page .lr-popup .lrp-content .popup_text
+{
+	padding-right: 90px;
+}
+
+
 @media (max-width: 1800px) {
 	.l_title, .l_evolution .l_title
 	{
@@ -1356,6 +1387,11 @@ p.l_subtitle
 	.l_page .l_representatives_list:before,
 	.l_page .lr-analysis:after {
 		content: none;
+	}
+
+	.l_page .lr-popup .lrp-content .popup_text
+	{
+		padding-right: 20px;
 	}
 }
 @media (max-width: 991px) {
