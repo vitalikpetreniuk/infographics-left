@@ -281,9 +281,9 @@ p.l_subtitle
 	-ms-flex-align: center;
 	align-items: center;
 }
-.l_finger_btn:first-child span
+.l_finger_btn:nth-child(2) span
 {
-	top: 100%;
+	margin-left: -30px;
 }
 .l_finger_btn span.red  {
 	color: #d03b3e;
@@ -292,8 +292,8 @@ p.l_subtitle
 	z-index: 10;
 }
 .l_finger_btn:hover  span {
-	width: 150px;
-	height: 90px;
+	width: 120px;
+	height: 80px;
 	opacity: 1;
 }
 
@@ -389,7 +389,7 @@ p.l_subtitle
 }
 .l_page .lr-popup .lrp-content
 {
-	max-width: none;
+	/*max-width: none;*/
 }
 .l_page .lr-popup .lrp-content .popup_text
 {
