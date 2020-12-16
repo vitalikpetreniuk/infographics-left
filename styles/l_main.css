@@ -387,9 +387,9 @@ p.l_subtitle
 	border-radius: 5px;
 	position: relative;
 }
-.l_page .lr-popup .lrp-content
+.l_page .lr-popup.l_popup_dark .lrp-content
 {
-	/*max-width: none;*/
+	max-width: 705px;
 }
 .l_page .lr-popup .lrp-content .popup_text
 {
@@ -664,6 +664,9 @@ p.l_subtitle
 	-o-transition: background-color 0.3s ease;
 	transition: background-color 0.3s ease;
 	position: relative;
+
+	font-size: 18px;
+	line-height: 20px;
 }
 .l_grid_btn:focus {
 	border: none;
@@ -780,7 +783,7 @@ p.l_subtitle
 	top: 100%;
 }
 .small_start_5 {
-	width: 8px;
+	width: 10px;
 	height: 1px;
 	left: 100%;
 	right: initial;
@@ -821,7 +824,7 @@ p.l_subtitle
 	top: calc(100% + 8px);
 	width: 53px;
 	height: 107px;
-	right: calc(100% - 29px);
+	right: calc(100% - 33px);
 	border: 1px solid #36373c;
 	border-right: none;
 }
@@ -829,17 +832,17 @@ p.l_subtitle
 	z-index: -1;
 	position: absolute;
 	top: calc(100% + 12px);
-	width: 70px;
-	height: 215px;
-	right: calc(100% - 58px);
+	width: 78px;
+	height: 213px;
+	right: calc(100% - 65px);
 	border: 1px solid #36373c;
 	border-right: none;
 }
 .arrow_around_3 {
 	z-index: -1;
 	position: absolute;
-	top: calc(100% + 8px);
-	width: 552px;
+	top: calc(100% + 7px);
+	width: 550px;
 	height: 1px;
 	left: 80%;
 	background: #36373c;
@@ -847,7 +850,7 @@ p.l_subtitle
 .arrow_around_4 {
 	z-index: -1;
 	top: calc(100% + 12px);
-	width: 62px;
+	width: 69px;
 	height: 103px;
 	border: 1px solid #36373c;
 	border-left: none;
@@ -878,7 +881,7 @@ p.l_subtitle
 	position: absolute;
 	top: -8px;
 	left: -8px;
-	width: 108%;
+	width: 109%;
 	height: 28px;
 	border: 1px solid #36373c;
 	border-bottom-color: transparent;
@@ -889,15 +892,15 @@ p.l_subtitle
 	position: absolute;
 	top: -12px;
 	left: -8px;
-	width: 105%;
+	width: 104%;
 	height: 41px;
 	border: 1px solid #36373c;
 	border-bottom-color: transparent;
 }
 .arrow_right_small {
 	z-index: -1;
-	width: 8px;
-	left: calc(100% + 8px);
+	width: 10px;
+	left: calc(100% + 5px);
 }
 .arrow_right_bottom {
 	z-index: -1;
@@ -906,8 +909,8 @@ p.l_subtitle
 }
 .arrow_bottom_marxizm {
 	z-index: -1;
-	left: 57px;
-	top: calc(100% + 7px);
+	left: 64px;
+	top: calc(100% + 5px);
 	height: 10px;
 }
 .arrow_bottom_long {
@@ -925,10 +928,10 @@ p.l_subtitle
 	left: 41px;
 }
 .l_grid_btn_13 .arrow_bottom_small.arrow_bottom_2 {
-	height: 10px;
+	height: 9px;
 	right: initial;
 	left: -5px;
-	top: calc(100% + 8px);
+	top: calc(100% + 7px);
 }
 .l_grid_btn_5 .small_start_1 {
 	width: 7px;
@@ -943,7 +946,7 @@ p.l_subtitle
 	left: 488px;
 }
 .arrow_bottom_old-left {
-	left: 29px;
+	left: 32px;
 	top: calc(100% + 4px);
 }
 .l_page button,
