@@ -165,7 +165,7 @@ p.l_subtitle
 
 .l_grid {
 	margin: auto;
-	width: 1040px;
+	width: 1110px;
 	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
@@ -174,7 +174,7 @@ p.l_subtitle
 }
 
 .l_grid_item {
-	width: 270px;
+	width: 100%;
 	height: 370px;
 	border: 1px solid #ffffff;
 	background-color: #ffffff;
@@ -379,21 +379,28 @@ p.l_subtitle
 	background-color: rgba(60,61,67,0.8);
 }
 
-.l_popup_dark .lrp-inner{
-	width: 800px;
+.lr-popup .lrp-inner
+{
 	height: 470px;
+	display: flex;
+	align-items: center;
+	padding: 50px 32px 65px 75px;
+}
+.l_popup_dark .lrp-inner
+{
 	background-color: #3c3d43;
-	padding: 50px 32px 63px 63px;
 	border-radius: 5px;
 	position: relative;
 }
-.l_page .lr-popup.l_popup_dark .lrp-content
-{
-	max-width: 705px;
+.l_page .lr-popup .lrp-content {
+	max-width: 693px;
+	display: block;
+	width: 693px;
 }
 .l_page .lr-popup .lrp-content .popup_text
 {
-	padding-right: 50px;
+	padding-right: 43px;
+	width: 100% !important;
 }
 
 .evolution_title,
@@ -414,6 +421,12 @@ p.l_subtitle
 	padding-bottom: 15px;
 	position: relative;
 	text-transform: none;
+}
+.evolution_title span
+{
+	display: block;
+	margin: 5px auto 0;
+	font-size: 16px;
 }
 .ideas_title
 {
@@ -1246,15 +1259,6 @@ p.l_subtitle
 	background-size: auto 100%;
 }
 
-.lr-popup .lrp-inner
-{
-	padding-right: 32px;
-}
-.l_page .lr-popup .lrp-content .popup_text
-{
-	padding-right: 90px;
-}
-
 
 @media (max-width: 1800px) {
 	.l_title, .l_evolution .l_title
@@ -1507,6 +1511,17 @@ p.l_subtitle
 		font-size: 18px;
 		line-height: 26px;
 	}
+
+
+	.lr-popup .lrp-inner
+	{
+		height: 100vh;
+		width: 100vw !important;
+	}
+	.l_page .lr-popup .lrp-content .popup_text
+	{
+		max-height: 437px;
+	}
 }
 @media (max-width: 768px) {
 	.l_grid_table {
@@ -1693,11 +1708,11 @@ p.l_subtitle
 	}
 
 	#ev_10 {
-		grid-area: fabian;
+		grid-area: revision;
 	}
 
 	#ev_11 {
-		grid-area: revision;
+		grid-area: fabian;
 	}
 
 	#ev_12 {
@@ -2014,7 +2029,8 @@ p.l_subtitle
 		margin-bottom: 20px !important;
 	}
 	.lr-intro .intro-content .l_main_title {
-		font-size: 36px;
+		font-size: 46px;
+		padding-left: .3em;
 	}
 	.l_grid_item:nth-child(n) {
 		background-image: url("../images/icons/social_vs_christian.png");
@@ -2053,7 +2069,7 @@ p.l_subtitle
 	}
 	.evolution_title, .fingers_title, .ideas_title
 	{
-		font-size: 21px;
+		font-size: 19px;
 	}
 	.evolution_text, .fingers_text, .ideas_text
 	{
@@ -2111,6 +2127,11 @@ p.l_subtitle
 	}
 	.l_page .lr-headsofstate-list .country .country-content .cc-left{
 		padding-bottom: 20px;
+	}
+
+	.l_finger_btn:nth-child(2) span
+	{
+		margin-left: 0;
 	}
 
 
