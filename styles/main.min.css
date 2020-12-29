@@ -3391,6 +3391,12 @@ p:not(:last-child) {
     border: 1px solid #8a8a8a
 }
 
+.lr-popup .lrp-inner .lrp-go:hover
+{
+    box-shadow: -1px 0 1px 1px #3c3d43;
+}
+
+
 .lr-popup .lrp-inner .lrp-go.go-up {
     top: -75px;
     background: url(../img/icons/go-right.svg) no-repeat center;
@@ -3421,6 +3427,11 @@ p:not(:last-child) {
     transform: translateY(-50%)
 }
 
+.lr-popup .lrp-inner .lrp-go.go-left:hover
+{
+    box-shadow: 1px 0 1px 1px #3c3d43;
+}
+
 .lr-popup .lrp-inner .lrp-go.go-right {
     right: -75px;
     background: url(../img/icons/go-right.svg) no-repeat center;
@@ -3429,6 +3440,19 @@ p:not(:last-child) {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%)
+}
+.lr-popup .lrp-inner .lrp-go.go-up:hover,
+.lr-popup .lrp-inner .lrp-go.go-down:hover,
+.lr-popup .lrp-inner .lrp-go.go-right:hover
+{
+    background: url(../img/icons/go-right-hover.png) no-repeat 17px center;
+}
+.lr-popup .lrp-inner .lrp-go.go-left:hover
+{
+    background: url(../img/icons/go-right-hover.png) no-repeat 17px center;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .lr-popup .lrp-content {
@@ -5004,6 +5028,38 @@ a
     text-decoration: none !important;
 }
 
+.lr-authors
+{
+    background:#ffffff;
+    padding-bottom: 40px;
+}
+.lr-authors > div
+{
+    max-width: 1124px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lr-authors > div .copywriter,
+.lr-authors > div .visual
+{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+
+    color: #3c3d43;
+}
+.lr-authors > div .copywriter
+{
+    margin-right: 100px;
+}
+.lr-authors > div .copywriter strong,
+.lr-authors > div .visual strong
+{
+    font-family: MuseoSansCyrl-700, sans-serif;
+}
+
 
 @media only screen and (min-width: 1441px)
 {
@@ -5169,6 +5225,11 @@ a
         height: 30px;
         width: 31px;
         margin-right: 22px;
+    }
+
+    .lr-authors > div .copywriter, .lr-authors > div .visual
+    {
+        font-size: 16px;
     }
 }
 
@@ -5884,6 +5945,26 @@ a
         bottom: 5px;
         background: url(../img/icons/go-right-black.svg) no-repeat center;
         background-size: 30px auto;
+    }
+
+    .lr-authors
+    {
+        padding-bottom: 20px;
+    }
+    .lr-authors > div
+    {
+        padding: 0 20px;
+        justify-content: flex-start;
+    }
+    .lr-authors > div .copywriter
+    {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .lr-authors > div .copywriter, .lr-authors > div .visual
+    {
+        font-size: 16px;
+        line-height: 1;
     }
 }
 
